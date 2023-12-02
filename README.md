@@ -6,7 +6,7 @@ Requires the State Array Single-Particle Tracking (SASPT) analysis package, avai
 
 # Instructions
 *	Copy these files to an analysis folder within the data directory:
-  * autosmt_utils.py
+ ** autosmt_utils.py
   * callCellPicker.m
  * cellpicker.m
  * autosmt_papa_saspt.ipynb
