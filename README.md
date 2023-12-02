@@ -20,4 +20,4 @@ Requires the State Array Single-Particle Tracking (SASPT) analysis package, avai
 To analyze green-to-violet ratios (a normalized measure of PAPA efficiency), use the notebook plot_GV_ratio.ipynb. It expects that you will already have done cell picking and sorting with sort_picked.py, and that you will have an analysis_settings.toml file containing (at least) the PAPA cycle parameters.
 
 # Contact info
-If you are interested in performing and analyzing PAPA-SMT experiments, please feel free to contact me! Email me at my GitHub user name at gmail.
+If you are interested in performing and analyzing PAPA-SMT experiments, please feel free to contact me! You can email me at my GitHub user name at gmail.
