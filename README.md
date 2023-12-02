@@ -1,6 +1,8 @@
 # basic_PAPASMT_analysis
 Code for performing SASPT analysis on automated PAPA-SMT experiments
 
+This was designed for use with the automated SMT acquisition pipeline developed in the Tjian-Darzacq group, but it could easily be adapted for other data formats.
+
 # Requirements
 Requires the State Array Single-Particle Tracking (SASPT) analysis package, available here: https://saspt.readthedocs.io/en/latest/
 
