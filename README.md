@@ -19,5 +19,18 @@ Requires the State Array Single-Particle Tracking (SASPT) analysis package, avai
 
 To analyze green-to-violet ratios (a normalized measure of PAPA efficiency), use the notebook plot_GV_ratio.ipynb. It expects that you will already have done cell picking and sorting with sort_picked.py, and that you will have an analysis_settings.toml file containing (at least) the PAPA cycle parameters.
 
+# References
+For more information about PAPA, please see the following publications:
+
+Detecting molecular interactions in live-cell single-molecule imaging with proximity-assisted photoactivation (PAPA).
+Graham TGW, Ferrie JJ, Dailey GM, Tjian R, Darzacq X.
+Elife. 2022 Aug 17;11:e76870. doi: 10.7554/eLife.76870.
+PMID: 35976226 [https://elifesciences.org/articles/76870]
+
+Surprising Features of Nuclear Receptor Interaction Networks Revealed by Live Cell Single Molecule Imaging.
+Dahal L, Graham TG, Dailey GM, Heckert A, Tjian R, Darzacq X.
+bioRxiv. 2023 Oct 2:2023.09.16.558083. doi: 10.1101/2023.09.16.558083. Preprint.
+PMID: 37745337 [https://www.biorxiv.org/content/10.1101/2023.09.16.558083v2]
+
 # Contact info
 If you are interested in performing and analyzing PAPA-SMT experiments, please feel free to contact me! You can email me at my GitHub user name at gmail.
