@@ -18,14 +18,14 @@ au.sort_PAPA_DR(config)
 locs_df = au.getLocsByFrameDF(config,isPAPA=True)
 
 # Plot average number of localizations vs. frame index
-au.plot_Nlocs_wholemovie(config,locs_df)
+au.plot_Nlocs_wholemovie(config,locs_df,closefig=True)
 
 # Plot average number of localizations vs. frame index within each cycle
-au.plot_Nlocs_bycycle_colors(config,locs_df,byexperiment=True)
+au.plot_Nlocs_bycycle_colors(config,locs_df,byexperiment=True,closefig=True)
 
 # Do state array analysis of each condition
-[SA,posterior_occs,condition_names] = au.analyze_PAPA_DR_stateArray(config,nworkers=nworkers)
+[SA,posterior_occs,condition_names] = au.analyze_PAPA_DR_stateArray(config,nworkers=nworkers,closefig=True)
 
 # Do state array analysis of each condition, subsampling the same number of trajectories for each
-[SA_sameN,posterior_occs_sameN,condition_names_sameN] = au.analyze_PAPA_DR_stateArray_sameN(config,nworkers=nworkers,randseed=randseed,ignoreOther=True)
+[SA_sameN,posterior_occs_sameN,condition_names_sameN] = au.analyze_PAPA_DR_stateArray_sameN(config,nworkers=nworkers,randseed=randseed,ignoreOther=True,closefig=True)
 
