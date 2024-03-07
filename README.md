@@ -21,6 +21,9 @@ Requires the State Array Single-Particle Tracking (SASPT) analysis package, avai
 
 To analyze green-to-violet ratios (a normalized measure of PAPA efficiency), use the notebook plot_GV_ratio.ipynb. It expects that you will already have done cell picking and sorting with sort_picked.py, and that you will have an analysis_settings.toml file containing (at least) the PAPA cycle parameters.
 
+# Filtering localization density
+The script run_saspt_max_loc_density.py can be used to select only movies in which the density of localizations is below some threshold value. It expects that the target folder will have a CSV file locsperframe/gv_by_cell.csv, with columns containing DR localization counts (vcounts) and ROI areas (area). This CSV file is the output of notebook plot_GV_ratio.ipynb.
+
 # References
 For more information about PAPA, please see the following publications:
 
