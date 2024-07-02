@@ -3,11 +3,13 @@
 % and the next set runs it on the second set of files.
 snapfolder = '../snaps2';      % where the snapshots are stored
 roifile = '../rois.txt';       % text file providing coordinates of SMT ROIs 
+                                % set to [] if your cell segmentation corresponds to
+                                % the full FOV
 maskfolder = '../masks/';      % where cell masks are stored
                             % Note: This is not used if use_whole_roi is
                             % set to true.
-snapfolder2 = '../snaps4';     % second channel of snapshots (optional)
-snapfolder3 = '../snaps4';     % third channel of snapshots (optional)
+snapfolder2 = '../snaps2';     % second channel of snapshots (optional)
+snapfolder3 = '../snaps2';     % third channel of snapshots (optional)
 range = [];             % file number range to examine
 outfile = 'out.mat';        % where to store selection output
 gridsize=[2,3];             % size of image grid for display
@@ -15,7 +17,7 @@ ncat = 2;                   % number of categories
 scale1 = [0,3e4];           % scale for display of first channel
 scale2 = [0,3e4];          % scale for display of second channel
 scale3 = [0,3e4];          % scale for display of thirdq channel
-use_whole_roi = false;      % set this option to true if you want to take 
+use_whole_roi = true;      % set this option to true if you want to take 
                             % all of the trajectories from each imaged ROI
                             % rather than only selecting the ones that
                             % overlap the cell mask.
@@ -30,10 +32,10 @@ cellpicker(snapfolder,maskfolder,range,outfile,...
     'ncat',ncat,...
     'snapfolder2',snapfolder2,...
     'snapfolder3',snapfolder2,...
-    'roifile',roifile,...
     'scale1',scale1,...
     'scale2',scale2,...
     'scale3',scale3,...
+    'roifile',roifile,...
     'use_whole_roi',use_whole_roi,...
     'tightplots',tightplots,...
     'defaultsel',defaultsel);
