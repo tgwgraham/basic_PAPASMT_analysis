@@ -17,7 +17,7 @@ ncat = 2;                   % number of categories
 scale1 = [0,3e4];           % scale for display of first channel
 scale2 = [0,3e4];          % scale for display of second channel
 scale3 = [0,3e4];          % scale for display of thirdq channel
-use_whole_roi = true;      % set this option to true if you want to take 
+use_whole_roi = false;      % set this option to true if you want to take 
                             % all of the trajectories from each imaged ROI
                             % rather than only selecting the ones that
                             % overlap the cell mask.
