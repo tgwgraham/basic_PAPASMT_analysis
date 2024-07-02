@@ -25,17 +25,29 @@ To analyze green-to-violet ratios (a normalized measure of PAPA efficiency), use
 The script run_saspt_max_loc_density.py can be used to select only movies in which the density of localizations is below some threshold value. It expects that the target folder will have a CSV file locsperframe/gv_by_cell.csv, with columns containing DR localization counts (vcounts) and ROI areas (area). This CSV file is the output of notebook plot_GV_ratio.ipynb.
 
 # References
-For more information about PAPA, please see the following publications:
+For more information about PAPA and automated fast SMT, please see the following publications:
 
 Detecting molecular interactions in live-cell single-molecule imaging with proximity-assisted photoactivation (PAPA).
 Graham TGW, Ferrie JJ, Dailey GM, Tjian R, Darzacq X.
 Elife. 2022 Aug 17;11:e76870. doi: 10.7554/eLife.76870.
 PMID: 35976226 [https://elifesciences.org/articles/76870]
 
+Single-molecule live imaging of subunit interactions and exchange within cellular regulatory complexes
+Thomas G.W. Graham, Claire Dugast-Darzacq, Gina M. Dailey, Britney Weng, Xavier Darzacq, Robert Tjian
+bioRxiv 2024.06.25.600644; doi: https://doi.org/10.1101/2024.06.25.600644
+[https://doi.org/10.1101/2024.06.25.600644]
+
 Surprising Features of Nuclear Receptor Interaction Networks Revealed by Live Cell Single Molecule Imaging.
 Dahal L, Graham TG, Dailey GM, Heckert A, Tjian R, Darzacq X.
 bioRxiv. 2023 Oct 2:2023.09.16.558083. doi: 10.1101/2023.09.16.558083. Preprint.
 PMID: 37745337 [https://www.biorxiv.org/content/10.1101/2023.09.16.558083v2]
+
+Automated live-cell single-molecule tracking in enteroid monolayers reveals transcription factor dynamics probing lineage-determining function
+Nike Walther, Sathvik Anantakrishnan, Gina M. Dailey, Robert Tjian, Xavier Darzacq
+bioRxiv 2024.04.04.587889; doi: https://doi.org/10.1101/2024.04.04.587889
+[https://doi.org/10.1101/2024.04.04.587889]
+
+
 
 # Contact info
 If you are interested in performing and analyzing PAPA-SMT experiments, please feel free to contact me! You can email me at my GitHub user name at gmail.
