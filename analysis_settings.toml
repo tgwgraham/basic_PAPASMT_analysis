@@ -18,8 +18,6 @@
         #   is the ROI index and m is the cell index within that ROI.
         #   This 
         # meas_folder - file path of file containing measurements for each single-cell CSV file.
-        # stim_after - (optional) FOV number after which a stimulus (e.g., drug treatment) 
-        #   was applied
     
     [conditions.cond1]
         
