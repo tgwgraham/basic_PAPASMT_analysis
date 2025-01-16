@@ -21,39 +21,41 @@
         # stim_after - (optional) FOV number after which a stimulus (e.g., drug treatment) 
         #   was applied
     
-    [conditions.ctrl]
+    [conditions.cond1]
         
-        title = "Halo-BRD4 + SNAPf-3xNLS"
+        title = "Condition 1"
         
         # List all experiments as "experiments.expname", where expname is some 
         # arbitrary user-defined name
         # Below are two experiments called "exp1" and "exp2"
         
-        [conditions.ctrl.experiments.exp1]
+        [conditions.cond1.experiments.exp1]
         
             # folder with selected CSV tracking files
             # For experiments with CSVs that have been sorted by cell, this should be the folder
             # containing sorted CSVs, not the original CSV folder
-            csv_folder = 'cell_by_cell_csvs_all1/1/'   
+            csv_folder = 'cell_by_cell_csvs_all/1/'   
         
             # csv file containing measurements corresponding to each single-cell csv file
             # this is the output of the function classify_and_write_csv in autosmt_utils
             # it is produced at the same time that trajectories from each cell are sorted into 
             # distinct files in the above csv_folder
-            measfile = 'cell_by_cell_csvs_all1/measurements.csv' 
+            measfile = 'cell_by_cell_csvs_all/measurements.csv' 
             
 
-    [conditions.BSCE11]
+    # Uncomment the following if you want to add a second condition
+    
+    #[conditions.cond2]
         
-        title = "Halo-BRD4 + SNAPf-CycT1 (BSC-E11)"
+    #    title = "Condition 2"
         
-        [conditions.BSCE11.experiments.exp1]
+    #    [conditions.cond2.experiments.exp1]
         
             # folder with selected CSV tracking files
-            csv_folder = 'cell_by_cell_csvs_all2/1/'   
+            #csv_folder = 'cell_by_cell_csvs_all_2/1/'   
         
             # folder containing single-cell measurements
-            measfile = 'cell_by_cell_csvs_all2/measurements.csv' 
+            #measfile = 'cell_by_cell_csvs_all_2/measurements.csv' 
 
 
 #####################
