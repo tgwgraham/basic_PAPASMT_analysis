@@ -41,9 +41,7 @@ def cell_sampler(index):
         sample_size = maxtraj,
     )
     SA = StateArray.from_detections(detections, **settings)
-   
-    posterior_occs = SA.posterior_occs
-    
+       
     SA.occupations_dataframe.to_csv(f'resampling_output/posterior_occs/DR_{index}_{time_format}.csv', index=False)
     
     # analyze PAPA
@@ -58,9 +56,7 @@ def cell_sampler(index):
         sample_size = maxtraj,
     )
     SA = StateArray.from_detections(detections, **settings)
-   
-    posterior_occs = SA.posterior_occs
-    
+       
     SA.occupations_dataframe.to_csv(f'resampling_output/posterior_occs/PAPA_{index}_{time_format}.csv', index=False)
 
     
